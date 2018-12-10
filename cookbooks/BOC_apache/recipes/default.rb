@@ -13,6 +13,10 @@ package "php-gd" do
 	action :install
 end
 
+package "apache2" do
+	action :install
+end
+
 service "httpd" do
         action [ :enable, :restart ]
 end
